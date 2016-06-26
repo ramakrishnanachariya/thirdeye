@@ -1,0 +1,45 @@
+Simple Video surveillance App
+===============================
+1.Restricted area Monitering 
+2.Specified Object Tracking Problem in an Environment of Multiple Moving Objects
+
+
+S/W  Requirement 
+=================
+OpenCV 2.4.9
+	
+
+How to execute the program
+==========================
+
+	2 steps of Application this 
+	============================
+	1.Run selected region (generated the .xml file)
+	2.Give Video input
+
+
+
+
+1. goto the Select_Region floder and  run this 
+
+g++ *.cpp -o selectregion `pkg-config --cflags --libs opencv`
+./selectregion
+
+**********left click for draw polylines , right click for end ********
+
+2. goto the Restricted_area floder and run this
+
+g++ *.cpp -o rarea `pkg-config --cflags --libs opencv`
+./rarea -v ../data/pedestrian_detection.avi
+
+
+while running
+************** u can track Specified Object using mouse click (draw rect)******
+
+
+
+
+
+
+
+
