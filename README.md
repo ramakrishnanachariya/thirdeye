@@ -1,4 +1,0 @@
-thirdeye
-========
-
-visual event detection
